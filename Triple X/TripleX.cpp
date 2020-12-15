@@ -26,7 +26,22 @@ int main()
     std::cout << "+ Ea suma del codigo es igual a: "<< CodeSum << std::endl;
     std::cout << "+ El producto del codigo es igual a: " << CodeMult << std::endl;
 
-    int PlayerGuess;
+    int GuessA, GuessB, GuessC;
+    std::cin >> GuessA;
+    std::cin >> GuessB;
+    std::cin >> GuessC;
+
+    int GuessSum = GuessA + GuessB + GuessC;
+    int GuessMult = GuessA*GuessB*GuessC;
+
+    if(GuessSum==CodeSum && GuessMult==CodeMult){
+        std::cout << "//Exito!..Redirigiendo al sistema...";
+    } 
+    else
+    {
+        std::cout << "//[ERROR] Intente nuevamente...";
+    }
+    
     
     
     return 0;
