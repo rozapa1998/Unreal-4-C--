@@ -39,12 +39,12 @@ bool PlayGame()
 
     //Set up Condicionales
     if(GuessSum==CodeSum && GuessMult==CodeMult){
-        std::cout << "\n//Exito!..Redirigiendo al sistema...";
+        std::cout << "\n//Exito!..Redirigiendo al sistema...\n";
         return true;
     } 
     else
     {
-        std::cout << "\n//[ERROR] Intente nuevamente...";
+        std::cout << "\n//[ERROR] Intente nuevamente...\n";
         return false;
     }
 }
@@ -56,6 +56,7 @@ int main()
         bool bLevelCompleted = PlayGame();
         std::cin.clear(); //Limpia errores
         std::cin.ignore();//Discard the buffer
+        
     }
 
     return 0;
