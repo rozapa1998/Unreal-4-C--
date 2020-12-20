@@ -11,12 +11,22 @@
         std::cout << "El nivel de intrucion es: " << Difficulty << std::endl;
     }
 
+    void PrintLevel(int Difficulty)
+    {
+        std::cout << "//...Firewall detectado necesario ingresar clave de pase...";
+        std::cout << "El nivel de intrucion es: " << Difficulty << std::endl;
+        std::cout << "\n";
+    }
+
+
 
 bool PlayGame(int Difficulty)
 {
     if (Difficulty <= 1) 
     {
         PrintIntroduction(Difficulty);
+    } else{
+        PrintLevel(Difficulty);
     }
 
     //Declaracion de variables
