@@ -1,4 +1,5 @@
 #include <iostream>
+#include <ctime>
 
     void PrintIntroduction(int Difficulty)
     {
@@ -30,6 +31,7 @@ bool PlayGame(int Difficulty)
     }
 
     //Declaracion de variables
+    //Usando funcion rand() mas modulo para dificultad
     const int CodeA = rand() % Difficulty + Difficulty;
     const int CodeB = rand() % Difficulty + Difficulty;
     const int CodeC = rand() % Difficulty + Difficulty;
@@ -65,6 +67,8 @@ bool PlayGame(int Difficulty)
 
 int main()
 {
+    srand(time(NULL)); //Crea una secuencia random en ralcion al horario de la pc
+
     int LevelDifficulty = 1;
     const int MaxLevelDifficulty = 5;
 
