@@ -30,9 +30,9 @@ bool PlayGame(int Difficulty)
     }
 
     //Declaracion de variables
-    const int CodeA = 3;
-    const int CodeB = 4;
-    const int CodeC = 2;
+    const int CodeA = rand() % Difficulty + Difficulty;
+    const int CodeB = rand() % Difficulty + Difficulty;
+    const int CodeC = rand() % Difficulty + Difficulty;
 
     //Suma y multiplicacion de variables
     const int CodeSum = CodeA+CodeB+CodeC;
@@ -41,7 +41,7 @@ bool PlayGame(int Difficulty)
     //Strings de Bienvenida
     std::cout <<"//Proceso de intrusion exitoso...\n//Ingresando al sistema...\n//[ERROR]...\n//Para iniciar al sistema debe ingresar clave de 3 dijitos...";
     std::cout <<"\n\n//PROGRAMA DE INTRUCION TRIPLEX CODIFICANDO...\n";
-    std::cout << "\n+ Ea suma del codigo es igual a: "<< CodeSum;
+    std::cout << "\n+ La suma del codigo es igual a: "<< CodeSum;
     std::cout << "\n+ El producto del codigo es igual a: " << CodeMult << std::endl;
 
     //Declarando variables de intentos
